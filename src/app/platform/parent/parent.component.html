@@ -1,0 +1,11 @@
+<div *ngIf="checkRouteUrl()">
+  <xng-breadcrumb [separator]="iconTemplate"></xng-breadcrumb>
+  <ng-template #iconTemplate>
+    <mat-icon>chevron_right</mat-icon>
+  </ng-template>
+
+  <button routerLink="child-one">Child One</button>
+</div>
+
+<router-outlet></router-outlet>
+<!-- Other HTML Elements -->
